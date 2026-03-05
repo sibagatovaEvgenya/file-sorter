@@ -21,6 +21,6 @@ FILE_TYPE_EXTENSIONS_MAPPING: dict[str, tuple[str, ...]] = {
     FileType.EXECUTABLE: ("exe", "msi", "bat", "cmd"),
     FileType.TORRENT: ("torrent", "magnet"),
     FileType.PRESENTATION: ("ppt", "pptx", "odp"),
-    FileType.SPREADSHEET: ("xls", "xlsx", "xlsm", "ods", "csv")
+    FileType.SPREADSHEET: ("xls", "xlsx", "xlsm", "ods", "csv"),
     FileType.SOURCE_CODE: ("js", "html", "py", "ts", "css")
 }
