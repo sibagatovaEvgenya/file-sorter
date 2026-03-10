@@ -1,6 +1,7 @@
 import shutil
 from pathlib import Path
-from src.consts import FileType, FILE_TYPE_EXTENSIONS_MAPPING
+
+from src.consts import FILE_TYPE_EXTENSIONS_MAPPING, FileType
 from src.models.path import PathModel
 
 
