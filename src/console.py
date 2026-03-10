@@ -1,4 +1,5 @@
 """Модуль консольного менеджера"""
+
 from rich import get_console
 from rich.panel import Panel
 from rich.progress import Progress, SpinnerColumn, TextColumn
@@ -16,6 +17,7 @@ class ConsoleManager:
         Notes:
             Если передан аргумент silent - текст в консоль выводиться не будет
     """
+
     def __init__(self, silent: bool) -> None:
         """
         Инициализация консольного менеджера
@@ -89,18 +91,17 @@ class ConsoleManager:
 
     def print_error(self, message: str) -> None:
         """
-               Вывести сообщение об ошибке
+        Вывести сообщение об ошибке
 
-               Args:
-                   message(str): текст сообщения
+        Args:
+            message(str): текст сообщения
 
-               Examples:
-                   >>> console_manager: ConsoleManager = ConsoleManager()
-                   >>> console_manager.print.error("Ошибка!")
+        Examples:
+            >>> console_manager: ConsoleManager = ConsoleManager()
+            >>> console_manager.print.error("Ошибка!")
 
-               """
+        """
         self._print(f"[red]{message}[/red]")
-
 
     def _print(self, message: str | Panel) -> None:
         """

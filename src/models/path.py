@@ -1,4 +1,5 @@
 """Модуль модели для работы с путем каталога"""
+
 from pathlib import Path
 from typing import Any, Generator
 
@@ -6,16 +7,17 @@ from typing import Any, Generator
 class PathModel:
     """Модель пути каталога
 
-       Attributes:
-            _path (Path): объект Path  путем каталога
-        """
+    Attributes:
+         _path (Path): объект Path  путем каталога
+    """
+
     def __init__(self, path: Path, skip_check: bool = False) -> None:
         """
-        Инициализация модели пути каталога
+         Инициализация модели пути каталога
 
-       Args:
-           path (Path):
-           skip_check (bool): Флаг пропуска проверки на существование. По умолчанию: False
+        Args:
+            path (Path):
+            skip_check (bool): Флаг пропуска проверки на существование. По умолчанию: False
         """
         self._path: Path = path
 

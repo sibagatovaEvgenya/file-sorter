@@ -1,3 +1,4 @@
+"""Модуль запуска приложения"""
 from src.sorter import console_app
 
 if __name__ == "__main__":

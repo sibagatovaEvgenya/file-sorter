@@ -1,17 +1,22 @@
+# pylint: disable=too-few-public-methods
 """Модуль констант"""
+
+
 class FileType:
     """Поддерживаемые типы файлов"""
+
     IMAGE: str = "image"
     VIDEO: str = "video"
     AUDIO: str = "audio"
     DOCUMENT: str = "document"
     ARCHIVE: str = "archive"
-    EXECUTABLE: str = "executable" # Исполняемые
+    EXECUTABLE: str = "executable"  # Исполняемые
     TORRENT: str = "torrent"
     PRESENTATION: str = "presentation"
-    SPREADSHEET: str = "spreadsheet" # Таблицы
+    SPREADSHEET: str = "spreadsheet"  # Таблицы
     SOURCE_CODE: str = "source_code"
     OTHER: str = "other"
+
 
 # Карта типов файлов и списка расширений
 FILE_TYPE_EXTENSIONS_MAPPING: dict[str, tuple[str, ...]] = {
